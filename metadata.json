@@ -1,0 +1,6 @@
+{
+  "name": "Crown Technology",
+  "description": "Premium IT training, staffing, and outsourcing software services website.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
