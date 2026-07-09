@@ -85,7 +85,7 @@ export default function EnquiryModal({ isOpen, onClose, selectedCourseId }: Enqu
               Admission & Enquiry
             </h3>
             <p className="text-sm text-slate-500 mt-1">
-              Start your tech career with Crown Technology today.
+              Start your tech career with <span className="text-crown-red font-bold">Crown Technology</span> today.
             </p>
           </div>
           <button 

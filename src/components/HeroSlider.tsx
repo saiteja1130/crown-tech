@@ -86,7 +86,7 @@ export default function HeroSlider({ onExploreCourses, onEnquireNow }: HeroSlide
                     {slide.title.includes("Crown Technology") ? (
                       <>
                         Build Your Tech Career with <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-crown-blue-light to-crown-purple">
+                        <span className="text-crown-red">
                           Crown Technology
                         </span>
                       </>

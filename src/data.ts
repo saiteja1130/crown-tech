@@ -397,6 +397,28 @@ export const SERVICES_DATA: ServiceItem[] = [
       "State-of-the-art secure REST/GraphQL API systems built for high-throughput",
       "Comprehensive warranty, deployment monitoring, and documentation"
     ]
+  },
+  {
+    id: "medical-coding",
+    title: "5. Medical Coding Services",
+    iconName: "ClipboardPlus",
+    summary: "Accurate, HIPAA-compliant medical coding and billing solutions connecting healthcare providers with certified coders for maximum revenue cycle efficiency.",
+    details: "Crown Technology's Medical Coding division provides end-to-end healthcare revenue cycle management. Our team of certified medical coders (CPC, CCS, RHIT) handles accurate ICD-10-CM, CPT, and HCPCS code assignment, ensuring optimal reimbursement rates and zero compliance violations for hospitals, clinics, and specialty practices worldwide.",
+    offerings: [
+      "ICD-10-CM / CPT / HCPCS coding for all clinical specialties",
+      "Medical billing, claim submission & denial management",
+      "Medical coding training & AAPC/AHIMA certification prep",
+      "Offshore medical coding outsourcing with 99%+ accuracy",
+      "Revenue Cycle Management (RCM) consulting & audits",
+      "HIPAA-compliant data handling & secure workflow integration"
+    ],
+    benefits: [
+      "99%+ coding accuracy reducing claim denials and revenue leakage",
+      "HIPAA-compliant secure infrastructure protecting patient data",
+      "Faster reimbursement cycles with reduced AR days",
+      "Certified coders (CPC / CCS / RHIT) across 30+ medical specialties",
+      "Dedicated account managers and real-time productivity dashboards"
+    ]
   }
 ];
 

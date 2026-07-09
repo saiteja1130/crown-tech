@@ -55,9 +55,9 @@ export default function Navbar({ currentPage, setCurrentPage, onOpenEnquiry }: N
             className="flex items-center focus:outline-none"
           >
             <img
-              src="/assets/images/crown.jpeg"
+              src="/assets/images/crown-nav.jpeg"
               alt="Crown Technology"
-              className="h-10 md:h-14 w-24 object-cover"
+              className="h-14 w-36 md:h-14 w-24 object-cover"
             />
           </button>
 

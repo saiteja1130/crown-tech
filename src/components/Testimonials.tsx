@@ -13,6 +13,18 @@ export default function Testimonials() {
     setActiveIdx((prev) => (prev + 1) % TESTIMONIALS.length);
   };
 
+  const highlight = (text: string) => {
+    const parts = text.split("Crown Technology");
+    return parts.map((part, i) =>
+      i < parts.length - 1 ? (
+        <React.Fragment key={i}>
+          {part}
+          <span className="text-crown-red font-bold not-italic">Crown Technology</span>
+        </React.Fragment>
+      ) : part
+    );
+  };
+
   return (
     <div className="font-sans max-w-4xl mx-auto">
       
@@ -33,7 +45,7 @@ export default function Testimonials() {
 
           {/* Core Quote Content */}
           <p className="text-slate-700 text-sm sm:text-base md:text-lg font-medium leading-relaxed italic">
-            "{TESTIMONIALS[activeIdx].text}"
+            "{highlight(TESTIMONIALS[activeIdx].text)}"
           </p>
 
           {/* User Bio and placed tag */}

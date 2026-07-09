@@ -86,7 +86,7 @@ export default function ContactView() {
                   <div>
                     <strong className="text-slate-900">Physical Address</strong>
                     <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mt-1">
-                      Crown Technology<br />
+                      <span className="text-crown-red font-bold">Crown Technology</span><br />
                       Near AAA Mall, Beside Gurudwara Temple,<br />
                       Alrich Purandev Building, 2nd Floor, Office 203
                     </p>

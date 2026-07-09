@@ -6,6 +6,18 @@ import { Clock, Calendar, ArrowRight, BookOpen, X, Sparkles } from "lucide-react
 export default function BlogSection() {
   const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
 
+  const highlight = (text: string) => {
+    const parts = text.split("Crown Technology");
+    return parts.map((part, i) =>
+      i < parts.length - 1 ? (
+        <React.Fragment key={i}>
+          {part}
+          <span className="text-crown-red font-bold">Crown Technology</span>
+        </React.Fragment>
+      ) : part
+    );
+  };
+
   return (
     <div className="font-sans">
       
@@ -122,10 +134,10 @@ export default function BlogSection() {
                 </p>
                 <div className="h-px bg-slate-100 my-4" />
                 <p>
-                  {selectedPost.content}
+                  {highlight(selectedPost.content)}
                 </p>
                 <p>
-                  As part of Crown Technology's rigorous ecosystem, we ensure our candidates are constantly exposed to critical thinking models, coding standards, and system security frameworks. Our corporate relationships open direct pathways to high-ticket roles for those who validate their skills with consistent performance.
+                  As part of <span className="text-crown-red font-bold">Crown Technology</span>'s rigorous ecosystem, we ensure our candidates are constantly exposed to critical thinking models, coding standards, and system security frameworks. Our corporate relationships open direct pathways to high-ticket roles for those who validate their skills with consistent performance.
                 </p>
               </div>
 

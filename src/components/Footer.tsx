@@ -28,13 +28,13 @@ export default function Footer({ setCurrentPage, onOpenEnquiry }: FooterProps) {
               className="flex items-center focus:outline-none"
             >
               <img
-                src="/assets/images/crown.jpeg"
+                src="/assets/images/crown-nav.jpeg"
                 alt="Crown Technology"
-                className="h-12 w-auto object-contain "
+                className="h-14 w-36 object-contain "
               />
             </button>
             <p className="text-slate-400 text-sm leading-relaxed mt-4">
-              Crown Technology is a premium software training institute, staffing firm, and offshore development outsourcing center. We transform careers and scale corporate operations.
+              <span className="text-crown-red font-bold">Crown Technology</span> is a premium software training institute, staffing firm, and offshore development outsourcing center. We transform careers and scale corporate operations.
             </p>
             <div className="flex items-center gap-2 text-xs text-white/80 bg-slate-900/50 p-2.5 rounded-lg border border-slate-800 w-fit">
               <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -89,7 +89,7 @@ export default function Footer({ setCurrentPage, onOpenEnquiry }: FooterProps) {
               </li>
               <li>
                 <button onClick={() => handlePageChange("about")} className="hover:text-white hover:underline transition-colors text-left">
-                  About Crown Technology
+                  About <span className="text-crown-red font-bold">Crown Technology</span>
                 </button>
               </li>
               <li>
@@ -114,7 +114,7 @@ export default function Footer({ setCurrentPage, onOpenEnquiry }: FooterProps) {
               <li className="flex items-start gap-2.5">
                 <MapPin className="w-5 h-5 text-crown-purple shrink-0 mt-0.5" />
                 <span className="leading-relaxed">
-                  <strong>Crown Technology</strong><br />
+                  <strong className="text-crown-red">Crown Technology</strong><br />
                   Near AAA Mall, Beside Gurudwara Temple,<br />
                   Alrich Purandev Building,<br />
                   2nd Floor, Office 203
@@ -144,7 +144,7 @@ export default function Footer({ setCurrentPage, onOpenEnquiry }: FooterProps) {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-slate-900 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
-          <p>© {currentYear} Crown Technology. All rights reserved.</p>
+          <p>© {currentYear} <span className="text-crown-red font-bold">Crown Technology</span>. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <button onClick={() => handlePageChange("contact")} className="hover:text-white transition-colors">
               Locate Us

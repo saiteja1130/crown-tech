@@ -44,7 +44,7 @@ export default function HomeView({ setCurrentPage, onOpenEnquiry }: HomeViewProp
               One Partner for Training, Staffing, and Development
             </h2>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-              Crown Technology integrates professional training, workforce staffing solutions, and offshore engineering services under a single cohesive, high-performance infrastructure.
+              <span className="text-crown-red font-bold">Crown Technology</span> integrates professional training, workforce staffing solutions, and offshore engineering services under a single cohesive, high-performance infrastructure.
             </p>
           </div>
 
@@ -106,7 +106,7 @@ export default function HomeView({ setCurrentPage, onOpenEnquiry }: HomeViewProp
               Organizational Advantages
             </span>
             <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-              Why Choose Crown Technology?
+              Why Choose <span className="text-crown-red">Crown Technology</span>?
             </h2>
             <p className="text-slate-600 text-sm">
               We focus on measurable placement figures and production-grade curriculum architectures.
@@ -151,7 +151,7 @@ export default function HomeView({ setCurrentPage, onOpenEnquiry }: HomeViewProp
               Alumni Placed Worldwide
             </h2>
             <p className="text-slate-600 text-sm">
-              Over 10,000 placements and counting. See reviews from Crown Technology graduates.
+              Over 10,000 placements and counting. See reviews from <span className="text-crown-red font-bold">Crown Technology</span> graduates.
             </p>
           </div>
 
@@ -228,7 +228,7 @@ export default function HomeView({ setCurrentPage, onOpenEnquiry }: HomeViewProp
           </div>
 
           <h2 className="font-display text-4xl sm:text-5xl font-black tracking-tight leading-tight max-w-3xl mx-auto">
-            Start Your IT Career Today with Crown Technology
+            Start Your IT Career Today with <span className="text-crown-red">Crown Technology</span>
           </h2>
 
           <p className="text-slate-300 text-sm sm:text-base leading-relaxed max-w-xl mx-auto">

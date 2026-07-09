@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { SERVICES_DATA } from "../data";
-import { GraduationCap, Users, Globe, Cpu, CheckCircle2, Star, Sparkles, Phone, ArrowUpRight } from "lucide-react";
+import { GraduationCap, Users, Globe, Cpu, ClipboardPlus, CheckCircle2, Star, Sparkles, Phone, ArrowUpRight } from "lucide-react";
 
 interface ServicesViewProps {
   onOpenEnquiry: () => void;
@@ -14,8 +14,22 @@ export default function ServicesView({ onOpenEnquiry }: ServicesViewProps) {
       case "GraduationCap": return <GraduationCap className={className} />;
       case "Users": return <Users className={className} />;
       case "Globe": return <Globe className={className} />;
+      case "ClipboardPlus": return <ClipboardPlus className={className} />;
       default: return <Cpu className={className} />;
     }
+  };
+
+  // Highlights "Crown Technology" in red wherever it appears in plain text
+  const highlight = (text: string) => {
+    const parts = text.split("Crown Technology");
+    return parts.map((part, i) =>
+      i < parts.length - 1 ? (
+        <React.Fragment key={i}>
+          {part}
+          <span className="text-crown-red font-bold">Crown Technology</span>
+        </React.Fragment>
+      ) : part
+    );
   };
 
   return (
@@ -32,26 +46,35 @@ export default function ServicesView({ onOpenEnquiry }: ServicesViewProps) {
             Comprehensive Training, Staffing & Outsourcing Services
           </h1>
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-            Crown Technology delivers reliable expertise. We support ambitious software engineers and assist global enterprises in securing pristine product delivery.
+            <span className="text-crown-red font-bold">Crown Technology</span> delivers reliable expertise. We support ambitious software engineers and assist global enterprises in securing pristine product delivery.
           </p>
         </div>
 
         {/* Dynamic Division Tabs */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 bg-slate-50 p-2 rounded-2xl border border-slate-100 max-w-4xl mx-auto">
-          {SERVICES_DATA.map((service) => (
-            <button
-              key={service.id}
-              onClick={() => setActiveTab(service.id)}
-              className={`px-4 py-3 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-2 cursor-pointer ${
-                activeTab === service.id
-                  ? "bg-gradient-to-r from-crown-blue to-crown-purple text-white shadow-md shadow-crown-blue/10"
-                  : "text-slate-600 hover:bg-white hover:text-slate-900"
-              }`}
-            >
-              {getIcon(service.iconName, "w-4 h-4")}
-              <span>{service.id.charAt(0).toUpperCase() + service.id.slice(1)}</span>
-            </button>
-          ))}
+        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-3 bg-slate-50 p-2 rounded-2xl border border-slate-100 max-w-5xl mx-auto">
+          {SERVICES_DATA.map((service) => {
+            const labels: Record<string, string> = {
+              training: "Training",
+              staffing: "Staffing",
+              outsourcing: "Outsourcing",
+              development: "Development",
+              "medical-coding": "Medical Coding"
+            };
+            return (
+              <button
+                key={service.id}
+                onClick={() => setActiveTab(service.id)}
+                className={`px-4 py-3 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-2 cursor-pointer ${
+                  activeTab === service.id
+                    ? "bg-gradient-to-r from-crown-blue to-crown-purple text-white shadow-md shadow-crown-blue/10"
+                    : "text-slate-600 hover:bg-white hover:text-slate-900"
+                }`}
+              >
+                {getIcon(service.iconName, "w-4 h-4")}
+                <span>{labels[service.id] || service.id.charAt(0).toUpperCase() + service.id.slice(1)}</span>
+              </button>
+            );
+          })}
         </div>
 
         {/* Selected Division Detailed Explanation Section */}
@@ -76,11 +99,11 @@ export default function ServicesView({ onOpenEnquiry }: ServicesViewProps) {
                 </div>
 
                 <p className="text-slate-800 text-sm font-medium leading-relaxed">
-                  {service.summary}
+                  {highlight(service.summary)}
                 </p>
 
                 <p className="text-slate-600 text-sm leading-relaxed">
-                  {service.details}
+                  {highlight(service.details)}
                 </p>
 
                 {/* Sub offerings list */}

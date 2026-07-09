@@ -89,7 +89,7 @@ export default function ProcessUI() {
             {PROCESS_STEPS[activeStep].title} Overview
           </h3>
           <p className="text-slate-600 text-sm leading-relaxed">
-            During this phase, Crown Technology ensures you achieve deep theoretical familiarity alongside real-world implementation exercises. You are mentored by engineers who audit your progress, providing individual code critiques.
+            During this phase, <span className="text-crown-red font-bold">Crown Technology</span> ensures you achieve deep theoretical familiarity alongside real-world implementation exercises. You are mentored by engineers who audit your progress, providing individual code critiques.
           </p>
         </div>
         

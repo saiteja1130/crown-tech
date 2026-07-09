@@ -72,7 +72,7 @@ export default function AboutView({ onOpenEnquiry }: AboutViewProps) {
           </div>
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight max-w-3xl">
             Innovate, Integrate, and Inspire with <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-crown-blue-light via-crown-purple to-crown-red">
+            <span className="text-crown-red">
               Crown Technology
             </span>
           </h1>
@@ -112,7 +112,7 @@ export default function AboutView({ onOpenEnquiry }: AboutViewProps) {
               Bridging the Gap Between Industry Needs & Technical Skills
             </h2>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-              Founded in India's booming technological landscape, Crown Technology realized that conventional classroom programs teach code blocks, not system design. Our core philosophy centers on hands-on practical execution—building APIs, configuring CI/CD pipelines, tuning relational queries, and creating automated testing structures.
+              Founded in India's booming technological landscape, <span className="text-crown-red font-bold">Crown Technology</span> realized that conventional classroom programs teach code blocks, not system design. Our core philosophy centers on hands-on practical execution—building APIs, configuring CI/CD pipelines, tuning relational queries, and creating automated testing structures.
             </p>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
               As an ISO 9001:2015 organization, we operate alongside our robust IT Staffing and Offshore Development divisions. This means our training program syllabus is continuously refreshed based on what corporations are actively searching for in our recruiting pipelines.
