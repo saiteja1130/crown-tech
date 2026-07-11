@@ -99,9 +99,12 @@ export default function ContactView() {
                   </div>
                   <div>
                     <strong className="text-slate-900">Direct Phone Link</strong>
-                    <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mt-1">
+                    <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mt-1 flex flex-col gap-1">
                       <a href="tel:9573884429" className="hover:text-crown-blue hover:underline font-mono font-semibold">
                         9573884429
+                      </a>
+                      <a href="tel:04045733628" className="hover:text-crown-blue hover:underline font-mono font-semibold">
+                        040 45733628
                       </a>
                     </p>
                   </div>

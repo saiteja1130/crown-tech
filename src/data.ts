@@ -402,8 +402,8 @@ export const SERVICES_DATA: ServiceItem[] = [
     id: "medical-coding",
     title: "5. Medical Coding Services",
     iconName: "ClipboardPlus",
-    summary: "Accurate, HIPAA-compliant medical coding and billing solutions connecting healthcare providers with certified coders for maximum revenue cycle efficiency.",
-    details: "Crown Technology's Medical Coding division provides end-to-end healthcare revenue cycle management. Our team of certified medical coders (CPC, CCS, RHIT) handles accurate ICD-10-CM, CPT, and HCPCS code assignment, ensuring optimal reimbursement rates and zero compliance violations for hospitals, clinics, and specialty practices worldwide.",
+    summary: "Medical Coding Training helps you build a career in the healthcare industry.",
+    details: "Learn Medical Terminology, Anatomy, ICD, CPT, and HCPCS coding. Gain practical, job-oriented training from industry experts. Suitable for freshers and graduates from Life Science backgrounds. Start your journey toward a rewarding healthcare career today.",
     offerings: [
       "ICD-10-CM / CPT / HCPCS coding for all clinical specialties",
       "Medical billing, claim submission & denial management",
